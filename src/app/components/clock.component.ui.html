@@ -1,0 +1,35 @@
+<script>return [
+{
+  let: {
+    name: "unknown",
+    date: new Date().toString(),
+  },
+
+  def: {
+    update($){
+      $.date = new Date().toString()
+      console.log("clock update!")
+    }
+  }
+}, 
+
+{
+  deps: { 
+    CustomHeader: DepsInj.CustomHeader ?? { h3: { attr:{ std: true } }}
+  }
+}]
+</script>
+
+
+<view>
+  <div>
+    <!-- injectable from external or default -->
+    <use-CustomHeader>
+      hi {{@name}} from clock: 
+      <br/>
+      {{@date}}
+      <br/>
+      is customized / injected ? {{$.el.std === 'true'}}
+    </use-CustomHeader>
+  </div>
+</view>
