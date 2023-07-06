@@ -1,6 +1,6 @@
 {
     "name": "new-cle-app",
-    "version": "0.14.3",
+    "version": "0.14.5",
     "outputFormat": "esmodule",
     "targets": {
         "browser": {
@@ -16,12 +16,12 @@
         "staticPath": "src/static"
     },
     "scripts": {
-        "start": "parcel serve src/index.html -p 4200 --host 127.0.0.1 --open ",
+        "start": "parcel serve src/index.html -p 4200 --host 127.0.0.1",
         "build": "parcel build",
         "test-build": "npx http-server ./dist/browser -p 4200 -c-1"
     },
     "dependencies": {
-        "cle.js": "~0.14.3",
+        "cle.js": "~0.14.5",
         "csz": "^1.2.0"
     },
     "devDependencies": {

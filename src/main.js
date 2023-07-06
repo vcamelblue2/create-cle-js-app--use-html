@@ -3,6 +3,8 @@ import {LE_InitWebApp, RenderApp} from 'cle.js/lib'
 
 import { Homepage } from './app/pages/home.page.deps'
 
+import "./app/global-di-components"
+
 import csz from 'csz'
 
 // fix csz to not use template literal
