@@ -1,6 +1,6 @@
 {
     "name": "new-cle-app",
-    "version": "0.14.5",
+    "version": "0.14.6",
     "outputFormat": "esmodule",
     "targets": {
         "browser": {
@@ -16,17 +16,18 @@
         "staticPath": "src/static"
     },
     "scripts": {
-        "start": "parcel serve src/index.html -p 4200 --host 127.0.0.1",
+        "start": "parcel serve src/index.html -p 4200",
         "build": "parcel build",
         "test-build": "npx http-server ./dist/browser -p 4200 -c-1"
     },
     "dependencies": {
-        "cle.js": "~0.14.5",
+        "cle.js": "~0.14.6",
         "csz": "^1.2.0"
     },
     "devDependencies": {
-        "parcel": "^2.9.2",
-        "@parcel/transformer-inline-string": "^2.9.2",
+        "parcel": "^2.9.3",
+        "@parcel/resolver-glob": "^2.9.3",
+        "@parcel/transformer-inline-string": "^2.9.3",
         "parcel-reporter-static-files-copy": "^1.5.0",
         "process": "^0.11.10"
     },
