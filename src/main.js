@@ -1,4 +1,4 @@
-// import Clean.js
+// import Cle.js
 import {LE_InitWebApp, RenderApp} from 'cle.js/lib'
 
 import "./utils/csz.js"

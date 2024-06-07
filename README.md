@@ -1,4 +1,4 @@
-# Clean.js App Template - With Html Components Style
+# Cle.js App Template - With Html Components Style
 
 This is a template project for Cle Apps with Html Components style as preferred Cle style and CSZ for css-in-js, usefull as clone-to-start project with pre-configured Parcell for development & production build.
 
